@@ -1,0 +1,2 @@
+#GWAS summary data QC using ldsc
+../1.software/1.ldsc/munge_sumstats.py --sumstats ../2.gwas-data/gwas-clean --chunksize 500000 --out ../2.gwas-data/gwas-clean

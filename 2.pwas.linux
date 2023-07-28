@@ -1,0 +1,10 @@
+for c in `seq 1 22`
+do
+Rscript ../1.software/2.pwas/scripts/PWAS.assoc_test.R \
+--sumstats ../2.gwas-data/gwas-clean.sumstats.gz \
+--weights ../1.software/2.pwas/PWAS_EA/Plasma_Protein_EA_hg19-correction.pos \
+--weights_dir ../1.software/2.pwas/PWAS_EA/Plasma_Protein_weights_EA/ \
+--ref_ld_chr ../1.software/2.pwas/LDref/EUR/chr  \
+--chr ${c}  \
+--out ../4.res-pwas/chr-${c}
+done
